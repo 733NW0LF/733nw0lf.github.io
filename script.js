@@ -7,7 +7,7 @@ const COMMANDS = {
   about:
     "Hello 👋<br>I'm Aswin Krishna.<br>I am a cybersecurity professional specializing in penetration testing and bug bounty hunting, currently residing in the state of Kerala, India.",
   skills:
-    '<span class="code">Skill:</span> Ethical Hacking, Pen-Testing, Bug Hunting, CTF Challenge Creation..<br>',
+    '<span class="code">Skill:</span> Ethical Hacking, Pen-Testing, Bug Hunting, CTF Development..<br>',
   education:
     "I hold a Bachelor of Computer Applications degree from Sree Vidhyathi Arts & Science College, located in Karunagappally, Kerala, India.",
   
