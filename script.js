@@ -37,7 +37,7 @@ const COMMANDS = {
     }
   },
   help: 'Supported commands: <span class="code">about</span>, <span class="code">experience</span>, <span class="code">education</span>, <span class="code">skills</span>, <span class="code">acknowledges</span>, <span class="code">contact</span>, <span class="code">clear</span>',
-  ls: '<span class="code">about</span>, <span class="code">experience</span>, <span class="code">education</span>, <span class="code">skills</span>, <span class="code">acknowledges</span>,<span class="code">top_secret</span><i class="fa-solid fa-user-secret"></i>, <span class="code">contact</span>, <span class="code">clear</span>',
+  ls: '<span class="code">about</span>, <span class="code">experience</span>, <span class="code">education</span>, <span class="code">skills</span>, <span class="code">acknowledges</span>,<span class="code">top_secret</span><i class="fa-solid fa-lock"></i>, <span class="code">contact</span>, <span class="code">clear</span>',
   about:
     "Hello 👋<br>I'm Aswin Krishna.<br>A cybersecurity professional with expertise in web application and API penetration testing. Recognized by companies like Apple, Blackberry, Trend Micro and many more for my bug bounty contributions, I thrive on solving challenges and creating educational CTFs.  currently residing in the state of Kerala, India.",
   skills : '<span class="code">Skills:</span><br>' +
@@ -57,7 +57,7 @@ const COMMANDS = {
       const part1 =
         "<span style='color: red;'>user is not in the sudoers file. This incident will be reported.</span>";
       const part2 =
-        "Just kidding! But seriously, you don't have permission to use <span style='color: red;'>sudo</span> here. Nice try 😉";
+        "Just kidding! But seriously, you don't have permission to use <span style='color: red;'>sudo</span> here. Nice try, though! 😉";
 
       terminalOutput.innerHTML += `<div class="terminal-line">${part1}</div>`;
       terminalOutput.scrollTop = terminalOutput.scrollHeight;
@@ -87,6 +87,7 @@ acknowledges:
  "cd top_secret": "<span style='color: red;'>Access Denied</span><i class='fa-solid fa-lock'></i>. Nice try, though. <br>But if you really want to see it, you can try typing <span class='code'>sudo</span> and see what happens.",
   cat: "meow...meow...meow...🐈",
   echo: "Echo... echo... echo...",
+  "rm -rf": "<span class='error'>Error: Permission denied. You can't delete my files!</span>",
   pwd: "/home/guest",
   ping: "pong!",
   grep: "You're searching for something? So am I... the meaning of it all.",
