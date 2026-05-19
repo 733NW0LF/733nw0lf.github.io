@@ -14,9 +14,10 @@ description: "A comprehensive writeup of the TJCTF treasure-hunt web challenge, 
 
 ### Description
 > Let's go hunt down some treasure! The flag is split into 4 parts. I'll give you the first one right here: `tjctf`
-!Description Screenshot
----
+
 ![desc](/assets/images/image-46.png)
+
+---
 
 # Recon
 
