@@ -1,0 +1,3 @@
+{{ $theme_script := resources.Get "js/theme.js" | minify | fingerprint }}
+<script src="{{ $theme_script.RelPermalink }}" integrity="{{ $theme_script.Data.Integrity }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.9.179/pdf.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
