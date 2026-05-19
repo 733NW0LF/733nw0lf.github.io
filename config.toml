@@ -1,0 +1,47 @@
+baseURL = "https://is-a.dev/"
+languageCode = "en-us"
+title = "Aswin Krishna ( 733n_wolf ) — Blog"
+theme = "hugo-blog-awesome"
+
+[params]
+  sitename = "Aswin Krishna — Blog"
+  description = "CTF writeups and pentesting blog"
+  defaultColor = "dark"
+  mainSections = ["posts"]
+  toc = true
+  tocOpen = false
+  goToTop = true
+  additionalScripts = ["js/pdf-viewer.js"]
+  rssFeedDescription = "summary"
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    languageCode = "en-us"
+    contentDir = "content/en"
+    weight = 1
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        pageRef = "/"
+        name = "Home"
+        url = "/"
+        weight = 10
+      [[languages.en.menu.main]]
+        pageRef = "posts"
+        name = "Posts"
+        url = "/posts/"
+        weight = 20
+      [[languages.en.menu.main]]
+        pageRef = "about"
+        name = "About"
+        url = "/about/"
+        weight = 30
