@@ -7,7 +7,7 @@ description: "A comprehensive writeup of the TJCTF treasure-hunt web challenge, 
 ---
 
 # TJCTF - web/treasure-hunt Writeup
-![CTF Logo](/assets/images/image-53.png)
+![CTF Logo](/assets/images/image-53.png?width=102&height=102)
 ## Challenge Information
 - **Category:** Web
 - **Challenge Name:** treasure-hunt
@@ -16,7 +16,7 @@ description: "A comprehensive writeup of the TJCTF treasure-hunt web challenge, 
 > Let's go hunt down some treasure! The flag is split into 4 parts. I'll give you the first one right here: `tjctf`
 !Description Screenshot
 ---
-![desc](/assests/images/image-46.png)
+![desc](/assets/images/image-46.png)
 
 # Recon
 
@@ -84,7 +84,7 @@ This reveals the second fragment:
 _and_
 ```
 
-![](/assests/images/image-47.png)
+![](/assets/images/image-47.png)
 ---
 
 ## Part 3 - Cookie Disclosure in POST Response
@@ -106,7 +106,7 @@ This reveals another fragment:
 ```text
 {s1lv3r
 ```
-![](/assests/images/image-48.png)
+![](/assets/images/image-48.png)
 ---
 
 ## Part 4 - Hidden Path via robots.txt
@@ -124,7 +124,7 @@ Response:
 ```text
 Disallow: /gold-coffer
 ```
-![](/assests/images/image-49.png)
+![](/assets/images/image-49.png)
 
 Navigate to the hidden endpoint:
 
@@ -137,7 +137,7 @@ The page contains the final fragment:
 ```text
 g0ld}
 ```
-![](/assests/images/image-51.png)
+![](/assets/images/image-51.png)
 ---
 
 # Flag Assembly
