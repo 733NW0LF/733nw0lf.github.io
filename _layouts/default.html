@@ -4,36 +4,32 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title | default: site.title }}</title>
-    <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/assets/css/blog.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css'>
     <script src='https://use.fontawesome.com/releases/v7.0.0/js/all.js'></script>
   </head>
   <body>
-    <section class="hero is-fullheight">
-      <div class="hero-body">
-        <div class="container">
-          <div class="columns">
-            <div class="column is-3">
-              <!-- left column left as-is, reuse existing sidebar via include if needed -->
-              <div class="sidebar shadow">
-                <div style="padding:1rem; color:#b7c5d2;">
-                  <h2 class="header-name">{{ site.title }}</h2>
-                  <p>{{ site.description }}</p>
-                  <p style="margin-top:.5rem"><a href="/">Home</a> · <a href="/blog/">Blog</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="column is-flex">
-              <div class="column-child terminal shadow" style="padding:1rem;">
-                <main>
-                  {{ content }}
-                </main>
-              </div>
-            </div>
+    <div class="blog-shell">
+      <header class="blog-header">
+        <div class="blog-brand">
+          <h1>{{ site.title }}</h1>
+          <p>{{ site.description }}</p>
+        </div>
+        <nav class="blog-nav"><a href="/">Home</a><a href="/blog/">Blog</a></nav>
+      </header>
+      <main class="blog-main container">
+        <div class="blog-sidebar card">
+          <div class="card-content">
+            <h2>Latest posts</h2>
+            <p>CTF writeups and pentesting stories.</p>
           </div>
         </div>
-      </div>
-    </section>
+        <div class="blog-content card">
+          <div class="card-content">
+            {{ content }}
+          </div>
+        </div>
+      </main>
+    </div>
   </body>
   </html>

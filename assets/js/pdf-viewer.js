@@ -3,7 +3,7 @@
 */
 (function(){
   if (typeof pdfjsLib === 'undefined') return;
-  pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://unpkg.com/pdfjs-dist/build/pdf.worker.min.js';
+  pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.9.179/pdf.worker.min.js';
 
   function renderPDF(container, url) {
     const controls = document.createElement('div');

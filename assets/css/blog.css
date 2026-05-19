@@ -1,9 +1,70 @@
+.blog-shell {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #04111f 0%, #081826 100%);
+  color: #d6e3ff;
+  font-family: Inter, system-ui, sans-serif;
+}
+.blog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+  padding: 2rem 3rem 1rem;
+}
+.blog-brand h1 {
+  margin: 0;
+  color: #82b1ff;
+  font-size: 2rem;
+}
+.blog-brand p {
+  margin: .5rem 0 0;
+  color: #9bb5d8;
+}
+.blog-nav a {
+  margin-left: 1rem;
+  color: #9cdfff;
+  font-weight: 600;
+}
+.blog-nav a:hover {
+  color: #ffffff;
+}
+.blog-main {
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr);
+  gap: 1.5rem;
+  padding: 1rem 3rem 3rem;
+}
+.blog-sidebar,
+.blog-content,
+.post {
+  background: rgba(9, 21, 35, 0.9);
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.18);
+}
+.card-content,
+.post {
+  padding: 1.5rem;
+}
+.blog-sidebar h2 {
+  margin-top: 0;
+  color: #9ed3ff;
+}
 .posts-list { display:block; }
-.post-item { padding: 0.5rem 0; border-bottom:1px solid rgba(255,255,255,0.03);} 
-.post-link { color: #9ed3ff; font-weight:600; }
+.post-item { padding: 0.75rem 0; border-bottom:1px solid rgba(255,255,255,0.08);} 
+.post-link { color: #9ed3ff; font-weight:600; text-decoration:none; }
+.post-link:hover { color: #fff; }
 .post-meta { color: #94a3b8; font-size:0.85rem }
-.pdf-container { background: #0b1726; padding: .5rem; border-radius:4px; }
-.pdf-controls { margin-bottom: .5rem; color: #b7c5d2 }
-.pdf-canvas { width:100%; max-width:100%; border-radius:4px; box-shadow: 0 2px 8px rgba(0,0,0,0.5);} 
-.btn-download { margin-left: .5rem; color:#8dd39e }
-.pdf-error { color: #ff6b6b }
+.post-content {
+  line-height: 1.8;
+  color: #d1dbe8;
+}
+.pdf-container { background: #071723; padding: 1rem; border-radius:8px; margin:1rem 0; }
+.pdf-controls { margin-bottom: .7rem; color: #c8d6e5; display:flex; align-items:center; gap:.75rem; flex-wrap:wrap; }
+.pdf-controls button,
+.pdf-controls a { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 5px; color: #e4f1ff; padding: .5rem .75rem; cursor:pointer; text-decoration:none; }
+.pdf-canvas { width:100%; max-width:100%; border-radius:8px; box-shadow: 0 2px 14px rgba(0,0,0,0.35);} 
+.btn-download { margin-left: auto; color:#8dd39e; }
+.pdf-error { color: #ff8f8f }
+@media screen and (max-width: 900px) {
+  .blog-main { grid-template-columns: 1fr; padding: 1rem 1.5rem 2rem; }
+}
