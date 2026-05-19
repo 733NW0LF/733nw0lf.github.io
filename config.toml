@@ -16,7 +16,12 @@ defaultContentLanguage = "en"
   additionalScripts = ["js/pdf-viewer.js"]
   rssFeedDescription = "summary"
 
-author = { name = "Aswin Krishna", email = "733nwolf@gmail.com", url = "https://733nwolf.is-a.dev" }
+  [params.author]
+    name = "Aswin Krishna"
+    email = "733nwolf@gmail.com"
+    url = "https://733nwolf.is-a.dev"
+    intro = "Cybersecurity researcher and CTF enthusiast"
+    description = "CTF writeups and pentesting blog"
 
 [markup]
   [markup.highlight]
