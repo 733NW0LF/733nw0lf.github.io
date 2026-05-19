@@ -4,7 +4,7 @@ description: "CTF writeups and pentesting blog"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://is-a.dev"
 markdown: kramdown
-theme: minima
+theme: jekyll-theme-hacker
 permalink: /:categories/:year/:month/:day/:title/
 
 # Collections & defaults
