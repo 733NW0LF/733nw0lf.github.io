@@ -10,7 +10,7 @@ This post documents the DWVA (Damn Vulnerable Web Application) pentesting engage
 
 The attached PDF report is available below for inline viewing, and users can also download the file.
 
-{{< pdf src="/assests/pdfs/DWVA_report_by_aswin_krishna.pdf" >}}
+{{< pdf src="/assets/pdfs/DWVA_report_by_aswin_krishna.pdf" >}}
 
 ## Summary
 
