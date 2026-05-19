@@ -1,7 +1,9 @@
-baseURL = "https://is-a.dev/"
+baseURL = "https://is-a.dev/blog/"
 languageCode = "en-us"
 title = "Aswin Krishna ( 733n_wolf ) — Blog"
 theme = "hugo-blog-awesome"
+
+defaultContentLanguage = "en"
 
 [params]
   sitename = "Aswin Krishna — Blog"
@@ -23,25 +25,19 @@ theme = "hugo-blog-awesome"
     startLevel = 2
     endLevel = 4
 
-[languages]
-  [languages.en]
-    languageName = "English"
-    languageCode = "en-us"
-    contentDir = "content/en"
-    weight = 1
-    [languages.en.menu]
-      [[languages.en.menu.main]]
-        pageRef = "/"
-        name = "Home"
-        url = "/"
-        weight = 10
-      [[languages.en.menu.main]]
-        pageRef = "posts"
-        name = "Posts"
-        url = "/posts/"
-        weight = 20
-      [[languages.en.menu.main]]
-        pageRef = "about"
-        name = "About"
-        url = "/about/"
-        weight = 30
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/blog/"
+    weight = 10
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/blog/posts/"
+    weight = 20
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/blog/about/"
+    weight = 30

@@ -12,6 +12,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          submodules: false
+          fetch-depth: 0
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
@@ -19,16 +22,15 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
-      - name: Build Hugo site
+      - name: Build Hugo blog
         run: |
-          hugo --minify
+          hugo --minify -b "https://is-a.dev/blog/" -d public/blog
 
-      - name: Copy CNAME to public
+      - name: Copy portfolio root files
         run: |
+          mkdir -p public
+          cp -r index.html style.css script.js DP.jpg Background.jpg favicon.png assets public/
           if [ -f CNAME ]; then cp CNAME public/CNAME; fi
-
-      - name: Create .nojekyll
-        run: |
           touch public/.nojekyll
 
       - name: Upload Pages artifact
