@@ -20,8 +20,8 @@ defaultContentLanguage = "en"
     name = "Aswin Krishna"
     email = "733nwolf@gmail.com"
     url = "https://733nwolf.is-a.dev"
-    intro = "Cybersecurity researcher and CTF enthusiast"
-    description = "CTF writeups and pentesting blog"
+    intro = "733n_wolf"
+    description = "Cybersecurity researcher and CTF enthusiast"
 
 [markup]
   [markup.highlight]
