@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title | default: site.title }}</title>
-    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="{{ '/assets/css/blog.css' | relative_url }}">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css'>
     <script src='https://use.fontawesome.com/releases/v7.0.0/js/all.js'></script>
   </head>
@@ -22,6 +22,7 @@
           <div class="card-content">
             <h2>Latest posts</h2>
             <p>CTF writeups and pentesting stories.</p>
+            <div class="sidebar-links"><a href="{{ '/blog/' | relative_url }}">Blog Home</a></div>
           </div>
         </div>
         <div class="blog-content card">

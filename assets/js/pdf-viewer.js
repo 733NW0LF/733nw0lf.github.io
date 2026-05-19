@@ -2,7 +2,10 @@
    Expects a container element with attribute data-pdf="/path/to/file.pdf"
 */
 (function(){
-  if (typeof pdfjsLib === 'undefined') return;
+  if (typeof pdfjsLib === 'undefined') {
+    console.error('pdfjsLib is not loaded');
+    return;
+  }
   pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.9.179/pdf.worker.min.js';
 
   function renderPDF(container, url) {
@@ -40,7 +43,8 @@
       pdfDoc = pdf;
       renderPage(pageNum);
     }).catch(function(err){
-      container.innerHTML = '<div class="pdf-error">Could not load PDF.</div>';
+      console.error('PDF load failed:', err);
+      container.innerHTML = '<div class="pdf-error">Could not load PDF: ' + (err.message || 'unknown error') + '</div>';
     });
 
     controls.querySelector('.btn-next').addEventListener('click', function(){
