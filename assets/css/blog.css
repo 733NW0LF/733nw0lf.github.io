@@ -1,0 +1,9 @@
+.posts-list { display:block; }
+.post-item { padding: 0.5rem 0; border-bottom:1px solid rgba(255,255,255,0.03);} 
+.post-link { color: #9ed3ff; font-weight:600; }
+.post-meta { color: #94a3b8; font-size:0.85rem }
+.pdf-container { background: #0b1726; padding: .5rem; border-radius:4px; }
+.pdf-controls { margin-bottom: .5rem; color: #b7c5d2 }
+.pdf-canvas { width:100%; max-width:100%; border-radius:4px; box-shadow: 0 2px 8px rgba(0,0,0,0.5);} 
+.btn-download { margin-left: .5rem; color:#8dd39e }
+.pdf-error { color: #ff6b6b }

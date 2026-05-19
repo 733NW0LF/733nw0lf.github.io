@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<article class="post">
+  <h1 class="title">{{ page.title }}</h1>
+  <p class="subtitle">{{ page.date | date: "%B %d, %Y" }} {% if page.tags %} · {{ page.tags | join: ", " }}{% endif %}</p>
+
+  {% if page.pdf %}
+  <div class="pdf-container" data-pdf="{{ page.pdf }}"></div>
+  {% endif %}
+
+  <div class="post-content">{{ content }}</div>
+
+  {% if page.pdf %}
+  <script src="https://unpkg.com/pdfjs-dist/build/pdf.min.js"></script>
+  <script src="/assets/js/pdf-viewer.js"></script>
+  {% endif %}
+</article>
