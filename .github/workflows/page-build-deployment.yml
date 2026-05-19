@@ -24,7 +24,7 @@ jobs:
 
       - name: Build Hugo blog
         run: |
-          hugo --minify -b "https://is-a.dev/blog/" -d public/blog
+          hugo --minify -b "https://733nwolf.is-a.dev/blog/" -d public/blog
 
       - name: Copy portfolio root files
         run: |
