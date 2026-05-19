@@ -1,5 +1,5 @@
-baseURL = "https://is-a.dev/blog/"
-languageCode = "en-us"
+baseURL = "https://733nwolf.is-a.dev/blog/"
+locale = "en-US"
 title = "Aswin Krishna ( 733n_wolf ) — Blog"
 theme = "hugo-blog-awesome"
 
@@ -15,6 +15,11 @@ defaultContentLanguage = "en"
   goToTop = true
   additionalScripts = ["js/pdf-viewer.js"]
   rssFeedDescription = "summary"
+
+[author]
+  name = "Aswin Krishna"
+  email = "733nwolf@gmail.com"
+  url = "https://733nwolf.is-a.dev"
 
 [markup]
   [markup.highlight]
