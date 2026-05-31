@@ -1,6 +1,6 @@
 ---
 title: "TJCTF 2026: Web / Treasure Hunt Writeup"
-date: 2024-05-24T12:00:00+00:00
+date: 2026-05-17T12:00:00+00:00
 draft: false
 tags: [tjctf, web, writeup, ctf]
 description: "A comprehensive writeup of the TJCTF treasure-hunt web challenge, finding hidden flag fragments through information disclosure and HTTP headers."

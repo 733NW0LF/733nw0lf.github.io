@@ -1,6 +1,6 @@
 ---
 title: "TJCTF 2026: Cryptography - Decode Script Writeup"
-date: 2026-05-31T15:57:50+05:30
+date: 2026-05-17T15:57:50+05:30
 draft: false
 tags: [tjctf, cryptography, writeup, ctf, chebyshev, matrix-exponentiation]
 description: "A comprehensive writeup of the TJCTF crypto challenge using Chebyshev polynomials and fast matrix exponentiation to efficiently compute large-order recurrence relations."
