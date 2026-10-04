@@ -128,6 +128,5 @@ The final step is to open `recovered_flag.png` and read the flag from the displa
 
 Since the challenge is a PNG recovery problem, the flag is obtained by visually inspecting the recovered image.
 
-> **Flag:** `tjctf{...}`
 
-If the exact value is discovered from the image, replace the placeholder above with the recovered flag.
+
