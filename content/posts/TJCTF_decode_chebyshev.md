@@ -220,15 +220,15 @@ tjctf{ch3bysh3v_p0lyn0m1!l_676767}
 
 # Key Takeaways
 
-1. **Recognize linear recurrences** — When you see s_{n+1} = a*s_n + b*s_{n-1}, think matrix exponentiation.
+1. **Recognize linear recurrences** - When you see s_{n+1} = a*s_n + b*s_{n-1}, think matrix exponentiation.
 
-2. **Matrix exponentiation reduces complexity** — From O(n) to O(log n), enabling computation of massive iteration counts.
+2. **Matrix exponentiation reduces complexity** - From O(n) to O(log n), enabling computation of massive iteration counts.
 
-3. **Modular arithmetic** — Remember to apply modulo at every step to prevent overflow.
+3. **Modular arithmetic** - Remember to apply modulo at every step to prevent overflow.
 
-4. **Chebyshev polynomials** — This specific recurrence is related to Chebyshev polynomials of the second kind, which have elegant properties.
+4. **Chebyshev polynomials** - This specific recurrence is related to Chebyshev polynomials of the second kind, which have elegant properties.
 
-5. **CTF Crypto lesson** — Sometimes the "broken" script isn't broken; it just needs algorithmic optimization!
+5. **CTF Crypto lesson** - Sometimes the "broken" script isn't broken; it just needs algorithmic optimization!
 
 ---
 
